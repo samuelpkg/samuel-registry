@@ -1,0 +1,59 @@
+name: validate
+
+on:
+  pull_request:
+    paths:
+      - "index.toml"
+      - ".github/workflows/validate.yml"
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Set up Go
+        uses: actions/setup-go@v6
+        with:
+          go-version: "1.24.2"
+
+      - name: Install samuel CLI
+        run: |
+          go install github.com/ar4mirez/samuel/cmd/samuel@latest
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: Validate index.toml schema
+        run: samuel plugin validate --registry index.toml
+
+      - name: Resolve every repo
+        run: |
+          # Extract every `repo = "..."` line and HEAD-check via gh.
+          jq -r '.[] | .repo' < <(samuel plugin validate --registry index.toml --json) |
+            while read -r repo; do
+              if [ -z "$repo" ]; then continue; fi
+              echo "checking $repo"
+              status=$(curl -sIo /dev/null -w "%{http_code}" "https://$repo")
+              if [ "$status" = "404" ]; then
+                echo "::error::repo not found: $repo"
+                exit 1
+              fi
+            done
+
+      - name: Check every latest tag exists
+        run: |
+          # Skip entries with upstream = true (those track a moving branch).
+          samuel plugin validate --registry index.toml --json |
+            jq -rc '.[] | select(.upstream != true) | "\(.repo) \(.latest)"' |
+            while read -r repo tag; do
+              if [ -z "$repo" ]; then continue; fi
+              echo "checking tag v$tag in $repo"
+              if ! git ls-remote --tags "https://$repo" | grep -q "refs/tags/v$tag$"; then
+                echo "::error::tag v$tag missing in $repo"
+                exit 1
+              fi
+            done
