@@ -24,7 +24,7 @@ jobs:
 
       - name: Install samuel CLI
         run: |
-          go install github.com/ar4mirez/samuel/cmd/samuel@latest
+          go install github.com/samuelpkg/samuel/cmd/samuel@latest
           echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
 
       - name: Validate index.toml schema
