@@ -20,11 +20,11 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v6
         with:
-          go-version: "1.24.2"
+          go-version: "1.25"
 
       - name: Install samuel CLI
         run: |
-          go install github.com/ar4mirez/samuel/cmd/samuel@latest
+          go install github.com/samuelpkg/samuel/cmd/samuel@latest
           echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
 
       - name: Validate index.toml schema
@@ -32,10 +32,11 @@ jobs:
 
       - name: Resolve every repo
         run: |
-          # Extract every `repo = "..."` line and HEAD-check via gh.
-          jq -r '.[] | .repo' < <(samuel plugin validate --registry index.toml --json) |
+          # Extract every `repo = "..."` line and HEAD-check via curl.
+          # The CLI emits Go-style capitalized JSON keys (.Repo, .Latest, .Upstream).
+          jq -r '.[] | .Repo' < <(samuel plugin validate --registry index.toml --json) |
             while read -r repo; do
-              if [ -z "$repo" ]; then continue; fi
+              if [ -z "$repo" ] || [ "$repo" = "null" ]; then continue; fi
               echo "checking $repo"
               status=$(curl -sIo /dev/null -w "%{http_code}" "https://$repo")
               if [ "$status" = "404" ]; then
@@ -46,11 +47,11 @@ jobs:
 
       - name: Check every latest tag exists
         run: |
-          # Skip entries with upstream = true (those track a moving branch).
+          # Skip entries with Upstream = true (those track a moving branch).
           samuel plugin validate --registry index.toml --json |
-            jq -rc '.[] | select(.upstream != true) | "\(.repo) \(.latest)"' |
+            jq -rc '.[] | select(.Upstream != true) | "\(.Repo) \(.Latest)"' |
             while read -r repo tag; do
-              if [ -z "$repo" ]; then continue; fi
+              if [ -z "$repo" ] || [ "$repo" = "null" ]; then continue; fi
               echo "checking tag v$tag in $repo"
               if ! git ls-remote --tags "https://$repo" | grep -q "refs/tags/v$tag$"; then
                 echo "::error::tag v$tag missing in $repo"

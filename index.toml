@@ -241,6 +241,15 @@ categories  = ["language"]
 tags        = ["go"]
 
 [[plugins]]
+name        = "go-guide-wasm"
+repo        = "github.com/samuelpkg/samuel-go-guide-wasm"
+latest      = "0.1.0"
+kind        = "wasm"
+description = "Reference WASM plugin for Samuel v2.2: TinyGo port of go-guide that exposes a `lint` export against /workspace Go files. Capability-locked (filesystem.read, no env, no network); cosign-signed cold-start under 50 ms."
+categories  = ["language"]
+tags        = ["go", "wasm", "tinygo", "reference"]
+
+[[plugins]]
 name        = "hanami"
 repo        = "github.com/samuelpkg/samuel-hanami"
 latest      = "1.0.0"
