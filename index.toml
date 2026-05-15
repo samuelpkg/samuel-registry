@@ -243,11 +243,14 @@ tags        = ["go"]
 
 [[plugins]]
 name        = "go-guide"
-repo        = "github.com/samuelpkg/samuel-go-guide"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "go-guide"
+latest      = "main"
 description = "Go language guardrails, patterns, and best practices for AI-assisted development. Use when working with Go files (.go), go.mod, or when the user mentions Go/Golang. Provides project structure conventions, error handling patterns, testing standards, and concurrency guidelines specific to this project's coding standards."
 categories  = ["language"]
 tags        = ["go"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "go-guide-wasm"
@@ -372,11 +375,14 @@ tags        = ["ruby"]
 
 [[plugins]]
 name        = "react"
-repo        = "github.com/samuelpkg/samuel-react"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "react"
+latest      = "main"
 description = "React 18+ framework guardrails, patterns, and best practices for AI-assisted development. Use when working with React projects (.jsx/.tsx files), or when the user mentions React. Provides component patterns, hooks, state management, testing, and performance guidelines."
 categories  = ["framework"]
 tags        = ["typescript"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "refactoring"
