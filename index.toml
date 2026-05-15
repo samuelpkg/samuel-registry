@@ -40,10 +40,13 @@ upstream    = true
 
 [[plugins]]
 name        = "auto"
-repo        = "github.com/samuelpkg/samuel-auto"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "auto"
+latest      = "main"
 description = "Autonomous AI coding loop (Ralph Wiggum methodology). Use when running AI agents in unattended/autonomous mode to independently select and complete tasks from a structured task list (prd.json). Enables AFK development across multiple context windows."
 categories  = ["workflow"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "axum"
@@ -72,24 +75,33 @@ tags        = ["oci", "claude", "anthropic", "reference"]
 
 [[plugins]]
 name        = "cleanup-project"
-repo        = "github.com/samuelpkg/samuel-cleanup-project"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "cleanup-project"
+latest      = "main"
 description = "Project cleanup and pruning workflow. Use when removing unused guides, cleaning up stale components, or streamlining an Samuel installation to match actual project needs."
 categories  = ["workflow"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "code-review"
-repo        = "github.com/samuelpkg/samuel-code-review"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "code-review"
+latest      = "main"
 description = "Pre-commit code quality review workflow. Use before committing changes to verify code quality, security, testing coverage, and adherence to project conventions. Supports both automated checking and interactive review modes."
 categories  = ["workflow"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "commit-message"
-repo        = "github.com/samuelpkg/samuel-commit-message"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "commit-message"
+latest      = "main"
 description = "Generate descriptive commit messages by analyzing git diffs. Use when the user asks for help writing commit messages, reviewing staged changes, or wants to commit with a well-formatted message following conventional commits format."
 categories  = ["workflow"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "cpp-guide"
@@ -104,24 +116,33 @@ upstream    = true
 
 [[plugins]]
 name        = "create-prd"
-repo        = "github.com/samuelpkg/samuel-create-prd"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "create-prd"
+latest      = "main"
 description = "Product Requirements Document (PRD) creation workflow. Use when defining implementation requirements for complex features, new subsystems, or any task affecting more than 10 files."
 categories  = ["workflow"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "create-rfd"
-repo        = "github.com/samuelpkg/samuel-create-rfd"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "create-rfd"
+latest      = "main"
 description = "Request for Discussion (RFD) creation workflow. Use when exploring technical options, building consensus on architecture decisions, or documenting design rationale before implementation begins. Creates structured documents that capture problem context, evaluate alternatives, and preserve decision-making rationale."
 categories  = ["workflow"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "create-skill"
-repo        = "github.com/samuelpkg/samuel-create-skill"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "create-skill"
+latest      = "main"
 description = "Agent Skill creation workflow. Use when creating new reusable AI agent skills, scaffolding skill directories, or converting existing guides into the portable Agent Skills standard format."
 categories  = ["workflow"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "csharp-guide"
@@ -166,10 +187,13 @@ upstream    = true
 
 [[plugins]]
 name        = "dependency-update"
-repo        = "github.com/samuelpkg/samuel-dependency-update"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "dependency-update"
+latest      = "main"
 description = "Safe dependency update workflow. Use when upgrading packages, resolving vulnerability alerts, updating major versions, or auditing dependency health across project ecosystems."
 categories  = ["workflow"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "django"
@@ -181,10 +205,13 @@ tags        = ["python"]
 
 [[plugins]]
 name        = "document-work"
-repo        = "github.com/samuelpkg/samuel-document-work"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "document-work"
+latest      = "main"
 description = "Work documentation and pattern capture workflow. Use after completing significant work to capture patterns, decisions, and learnings in project memory files for future reference."
 categories  = ["workflow"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "echo"
@@ -236,17 +263,23 @@ tags        = ["dart"]
 
 [[plugins]]
 name        = "generate-agents-md"
-repo        = "github.com/samuelpkg/samuel-generate-agents-md"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "generate-agents-md"
+latest      = "main"
 description = "Cross-tool compatibility workflow. Use when generating AGENTS.md files for compatibility with other AI coding tools, or creating tool-specific instruction files from CLAUDE.md."
 categories  = ["workflow"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "generate-tasks"
-repo        = "github.com/samuelpkg/samuel-generate-tasks"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "generate-tasks"
+latest      = "main"
 description = "Task generation and breakdown workflow. Use when decomposing a PRD or complex feature into implementable subtasks with clear acceptance criteria and dependencies."
 categories  = ["workflow"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "gin"
@@ -422,10 +455,13 @@ upstream    = true
 
 [[plugins]]
 name        = "refactoring"
-repo        = "github.com/samuelpkg/samuel-refactoring"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "refactoring"
+latest      = "main"
 description = "Technical debt remediation and code restructuring workflow. Use when improving code structure, reducing complexity, extracting abstractions, or paying down accumulated technical debt."
 categories  = ["workflow"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "rocket"
@@ -459,10 +495,13 @@ upstream    = true
 
 [[plugins]]
 name        = "security-audit"
-repo        = "github.com/samuelpkg/samuel-security-audit"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "security-audit"
+latest      = "main"
 description = "Security assessment workflow. Use when reviewing code for vulnerabilities, performing OWASP checks, auditing authentication/authorization logic, or validating security controls before deployment."
 categories  = ["workflow"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "shelf"
@@ -558,24 +597,33 @@ tags        = ["php"]
 
 [[plugins]]
 name        = "sync-claude-md"
-repo        = "github.com/samuelpkg/samuel-sync-claude-md"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "sync-claude-md"
+latest      = "main"
 description = "Sync per-folder CLAUDE.md and AGENTS.md files with context-aware content. Use after structural changes, adding new directories, refactoring, or periodic maintenance to keep folder-level AI instructions current."
 categories  = ["workflow"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "testing-strategy"
-repo        = "github.com/samuelpkg/samuel-testing-strategy"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "testing-strategy"
+latest      = "main"
 description = "Test planning and coverage strategy workflow. Use when designing test suites, establishing coverage targets, planning TDD approaches, or assessing testing gaps in existing codebases."
 categories  = ["workflow"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "troubleshooting"
-repo        = "github.com/samuelpkg/samuel-troubleshooting"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "troubleshooting"
+latest      = "main"
 description = "Debugging and problem-solving workflow. Use when stuck on an issue for more than 30 minutes, encountering cryptic errors, or needing a systematic approach to diagnose and fix problems."
 categories  = ["workflow"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "typescript-guide"
