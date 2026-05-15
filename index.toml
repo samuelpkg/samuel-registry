@@ -5,27 +5,36 @@ schema_version = 1
 
 [[plugins]]
 name        = "actix-web"
-repo        = "github.com/samuelpkg/samuel-actix-web"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "actix-web"
+latest      = "main"
 description = "Actix-web framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Actix-web projects, or when the user mentions Actix-web. Provides actor patterns, async handlers, extractors, and high-performance web guidelines."
 categories  = ["framework"]
 tags        = ["rust"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "android-compose"
-repo        = "github.com/samuelpkg/samuel-android-compose"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "android-compose"
+latest      = "main"
 description = "Jetpack Compose framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Android Compose projects, or when the user mentions Jetpack Compose. Provides composable patterns, state management, Material 3, navigation, and lifecycle guidelines."
 categories  = ["framework"]
 tags        = ["kotlin"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "aspnet-core"
-repo        = "github.com/samuelpkg/samuel-aspnet-core"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "aspnet-core"
+latest      = "main"
 description = "ASP.NET Core framework guardrails, patterns, and best practices for AI-assisted development. Use when working with ASP.NET Core projects, or when the user mentions ASP.NET Core. Provides Minimal APIs, EF Core, authentication, middleware, and deployment guidelines."
 categories  = ["framework"]
 tags        = ["csharp"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "assembly-guide"
@@ -50,19 +59,25 @@ upstream    = true
 
 [[plugins]]
 name        = "axum"
-repo        = "github.com/samuelpkg/samuel-axum"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "axum"
+latest      = "main"
 description = "Axum framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Axum projects, or when the user mentions Axum framework. Provides Tower integration, async handlers, extractors, and type-safe routing guidelines."
 categories  = ["framework"]
 tags        = ["rust"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "blazor"
-repo        = "github.com/samuelpkg/samuel-blazor"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "blazor"
+latest      = "main"
 description = "Blazor framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Blazor projects, or when the user mentions Blazor. Provides WebAssembly/Server patterns, component lifecycle, SignalR, and state management guidelines."
 categories  = ["framework"]
 tags        = ["csharp"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "claude-code-oci"
@@ -168,11 +183,14 @@ upstream    = true
 
 [[plugins]]
 name        = "dart-frog"
-repo        = "github.com/samuelpkg/samuel-dart-frog"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "dart-frog"
+latest      = "main"
 description = "Dart Frog framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Dart Frog projects, or when the user mentions Dart Frog. Provides file-based routing, middleware, dependency injection, and server-side Dart guidelines."
 categories  = ["framework"]
 tags        = ["dart"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "dart-guide"
@@ -197,11 +215,14 @@ upstream    = true
 
 [[plugins]]
 name        = "django"
-repo        = "github.com/samuelpkg/samuel-django"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "django"
+latest      = "main"
 description = "Django 5+ framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Django projects, or when the user mentions Django. Provides ORM patterns, views, templates, DRF, admin, and security guidelines."
 categories  = ["framework"]
 tags        = ["python"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "document-work"
@@ -215,51 +236,69 @@ upstream    = true
 
 [[plugins]]
 name        = "echo"
-repo        = "github.com/samuelpkg/samuel-echo"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "echo"
+latest      = "main"
 description = "Echo framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Echo projects, or when the user mentions Echo framework. Provides middleware patterns, routing, context handling, and REST API guidelines."
 categories  = ["framework"]
 tags        = ["go"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "express"
-repo        = "github.com/samuelpkg/samuel-express"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "express"
+latest      = "main"
 description = "Express.js framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Express.js projects, or when the user mentions Express. Provides middleware patterns, routing, error handling, and REST API guidelines."
 categories  = ["framework"]
 tags        = ["typescript"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "fastapi"
-repo        = "github.com/samuelpkg/samuel-fastapi"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "fastapi"
+latest      = "main"
 description = "FastAPI framework guardrails, patterns, and best practices for AI-assisted development. Use when working with FastAPI projects, or when the user mentions FastAPI. Provides async patterns, Pydantic models, dependency injection, and OpenAPI guidelines."
 categories  = ["framework"]
 tags        = ["python"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "fiber"
-repo        = "github.com/samuelpkg/samuel-fiber"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "fiber"
+latest      = "main"
 description = "Fiber framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Fiber projects, or when the user mentions Fiber framework. Provides Express-style routing, middleware, high-performance patterns, and REST API guidelines."
 categories  = ["framework"]
 tags        = ["go"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "flask"
-repo        = "github.com/samuelpkg/samuel-flask"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "flask"
+latest      = "main"
 description = "Flask framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Flask projects, or when the user mentions Flask. Provides blueprint patterns, extensions, Jinja2 templates, and REST API guidelines."
 categories  = ["framework"]
 tags        = ["python"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "flutter"
-repo        = "github.com/samuelpkg/samuel-flutter"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "flutter"
+latest      = "main"
 description = "Flutter framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Flutter projects, or when the user mentions Flutter. Provides widget patterns, state management (Riverpod), navigation, and cross-platform guidelines."
 categories  = ["framework"]
 tags        = ["dart"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "generate-agents-md"
@@ -283,11 +322,14 @@ upstream    = true
 
 [[plugins]]
 name        = "gin"
-repo        = "github.com/samuelpkg/samuel-gin"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "gin"
+latest      = "main"
 description = "Gin framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Gin projects, or when the user mentions Gin framework. Provides middleware patterns, routing, validation, error handling, and REST API guidelines."
 categories  = ["framework"]
 tags        = ["go"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "go-guide"
@@ -311,11 +353,14 @@ tags        = ["go", "wasm", "tinygo", "reference"]
 
 [[plugins]]
 name        = "hanami"
-repo        = "github.com/samuelpkg/samuel-hanami"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "hanami"
+latest      = "main"
 description = "Hanami 2+ framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Hanami projects, or when the user mentions Hanami. Provides clean architecture, dry-rb integration, ROM, and modular design guidelines."
 categories  = ["framework"]
 tags        = ["ruby"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "html-css-guide"
@@ -352,19 +397,25 @@ upstream    = true
 
 [[plugins]]
 name        = "ktor"
-repo        = "github.com/samuelpkg/samuel-ktor"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "ktor"
+latest      = "main"
 description = "Ktor framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Ktor projects, or when the user mentions Ktor. Provides coroutine-based routing, plugins, serialization, and server/client guidelines."
 categories  = ["framework"]
 tags        = ["kotlin"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "laravel"
-repo        = "github.com/samuelpkg/samuel-laravel"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "laravel"
+latest      = "main"
 description = "Laravel 11+ framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Laravel projects, or when the user mentions Laravel. Provides Eloquent ORM, Blade templates, routing, middleware, and queue guidelines."
 categories  = ["framework"]
 tags        = ["php"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "lua-guide"
@@ -379,19 +430,25 @@ upstream    = true
 
 [[plugins]]
 name        = "micronaut"
-repo        = "github.com/samuelpkg/samuel-micronaut"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "micronaut"
+latest      = "main"
 description = "Micronaut framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Micronaut projects, or when the user mentions Micronaut. Provides compile-time DI, HTTP server/client, data access, and cloud-native guidelines."
 categories  = ["framework"]
 tags        = ["java"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "nextjs"
-repo        = "github.com/samuelpkg/samuel-nextjs"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "nextjs"
+latest      = "main"
 description = "Next.js 14+ framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Next.js projects, or when the user mentions Next.js/Next. Provides App Router patterns, server components, data fetching, and deployment guidelines."
 categories  = ["framework"]
 tags        = ["typescript"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "php-guide"
@@ -417,11 +474,14 @@ upstream    = true
 
 [[plugins]]
 name        = "quarkus"
-repo        = "github.com/samuelpkg/samuel-quarkus"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "quarkus"
+latest      = "main"
 description = "Quarkus framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Quarkus projects, or when the user mentions Quarkus. Provides CDI, RESTEasy, Panache, GraalVM native, and reactive guidelines."
 categories  = ["framework"]
 tags        = ["java"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "r-guide"
@@ -436,11 +496,14 @@ upstream    = true
 
 [[plugins]]
 name        = "rails"
-repo        = "github.com/samuelpkg/samuel-rails"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "rails"
+latest      = "main"
 description = "Rails 7+ framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Rails projects, or when the user mentions Ruby on Rails. Provides ActiveRecord, Hotwire/Turbo, Action Cable, and convention-over-configuration guidelines."
 categories  = ["framework"]
 tags        = ["ruby"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "react"
@@ -465,11 +528,14 @@ upstream    = true
 
 [[plugins]]
 name        = "rocket"
-repo        = "github.com/samuelpkg/samuel-rocket"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "rocket"
+latest      = "main"
 description = "Rocket framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Rocket projects, or when the user mentions Rocket framework. Provides type-safe routing, request guards, fairings, and macro-based handler guidelines."
 categories  = ["framework"]
 tags        = ["rust"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "ruby-guide"
@@ -505,11 +571,14 @@ upstream    = true
 
 [[plugins]]
 name        = "shelf"
-repo        = "github.com/samuelpkg/samuel-shelf"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "shelf"
+latest      = "main"
 description = "Shelf framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Shelf (Dart HTTP server) projects, or when the user mentions Shelf. Provides middleware patterns, request handling, pipeline composition, and server guidelines."
 categories  = ["framework"]
 tags        = ["dart"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "shell-guide"
@@ -524,11 +593,14 @@ upstream    = true
 
 [[plugins]]
 name        = "sinatra"
-repo        = "github.com/samuelpkg/samuel-sinatra"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "sinatra"
+latest      = "main"
 description = "Sinatra framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Sinatra projects, or when the user mentions Sinatra. Provides lightweight Ruby web patterns, routing DSL, middleware, and REST API guidelines."
 categories  = ["framework"]
 tags        = ["ruby"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "solidity-guide"
@@ -543,19 +615,25 @@ upstream    = true
 
 [[plugins]]
 name        = "spring-boot-java"
-repo        = "github.com/samuelpkg/samuel-spring-boot-java"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "spring-boot-java"
+latest      = "main"
 description = "Spring Boot (Java) framework guardrails, patterns, and best practices. Use when working with Spring Boot Java projects, or when the user mentions Spring Boot. Provides JPA, Security, REST, WebFlux, and enterprise Java guidelines."
 categories  = ["framework"]
 tags        = ["java"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "spring-boot-kotlin"
-repo        = "github.com/samuelpkg/samuel-spring-boot-kotlin"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "spring-boot-kotlin"
+latest      = "main"
 description = "Spring Boot with Kotlin framework guardrails, patterns, and best practices. Use when working with Spring Boot Kotlin projects, or when the user mentions Spring Boot with Kotlin. Provides coroutine patterns, WebFlux, JPA, security, and idiomatic Kotlin-Spring guidelines."
 categories  = ["framework"]
 tags        = ["kotlin"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "sql-guide"
@@ -581,19 +659,25 @@ upstream    = true
 
 [[plugins]]
 name        = "swiftui"
-repo        = "github.com/samuelpkg/samuel-swiftui"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "swiftui"
+latest      = "main"
 description = "SwiftUI framework guardrails, patterns, and best practices for AI-assisted development. Use when working with SwiftUI projects, or when the user mentions SwiftUI. Provides declarative UI patterns, state management, Combine, navigation, and accessibility guidelines."
 categories  = ["framework"]
 tags        = ["swift"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "symfony"
-repo        = "github.com/samuelpkg/samuel-symfony"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "symfony"
+latest      = "main"
 description = "Symfony 7+ framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Symfony projects, or when the user mentions Symfony. Provides Doctrine ORM, Twig templates, bundles, services, and security guidelines."
 categories  = ["framework"]
 tags        = ["php"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "sync-claude-md"
@@ -638,35 +722,47 @@ upstream    = true
 
 [[plugins]]
 name        = "uikit"
-repo        = "github.com/samuelpkg/samuel-uikit"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "uikit"
+latest      = "main"
 description = "UIKit framework guardrails, patterns, and best practices for AI-assisted development. Use when working with UIKit projects, or when the user mentions UIKit. Provides view controller patterns, Auto Layout, table/collection views, and navigation guidelines."
 categories  = ["framework"]
 tags        = ["swift"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "unity"
-repo        = "github.com/samuelpkg/samuel-unity"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "unity"
+latest      = "main"
 description = "Unity game engine guardrails, patterns, and best practices for AI-assisted development. Use when working with Unity projects, or when the user mentions Unity game development. Provides MonoBehaviour patterns, component architecture, physics, UI, and scripting guidelines."
 categories  = ["framework"]
 tags        = ["csharp"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "vapor"
-repo        = "github.com/samuelpkg/samuel-vapor"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "vapor"
+latest      = "main"
 description = "Vapor framework guardrails, patterns, and best practices for AI-assisted development. Use when working with Vapor projects, or when the user mentions Vapor. Provides Fluent ORM, async Swift, routing, middleware, and server-side Swift guidelines."
 categories  = ["framework"]
 tags        = ["swift"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "wordpress"
-repo        = "github.com/samuelpkg/samuel-wordpress"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "wordpress"
+latest      = "main"
 description = "WordPress framework guardrails, patterns, and best practices for AI-assisted development. Use when working with WordPress projects, or when the user mentions WordPress. Provides theme development, plugin architecture, REST API, blocks, and security guidelines."
 categories  = ["framework"]
 tags        = ["php"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "zig-guide"
