@@ -59,6 +59,15 @@ categories  = ["framework"]
 tags        = ["csharp"]
 
 [[plugins]]
+name        = "claude-code-oci"
+repo        = "github.com/samuelpkg/samuel-claude-code-oci"
+latest      = "0.1.0"
+kind        = "oci"
+description = "Reference OCI plugin for Samuel v2.3: packages Claude Code (Anthropic's CLI) as a sandbox-friendly container. Digest-pinned, capability-locked (filesystem /workspace rw, env ANTHROPIC_API_KEY, network allowlist api.anthropic.com), cosign-signed; runs via samuel run --sandbox=oci."
+categories  = ["workflow"]
+tags        = ["oci", "claude", "anthropic", "reference"]
+
+[[plugins]]
 name        = "cleanup-project"
 repo        = "github.com/samuelpkg/samuel-cleanup-project"
 latest      = "1.0.0"
