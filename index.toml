@@ -29,11 +29,14 @@ tags        = ["csharp"]
 
 [[plugins]]
 name        = "assembly-guide"
-repo        = "github.com/samuelpkg/samuel-assembly-guide"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "assembly-guide"
+latest      = "main"
 description = "Assembly language guardrails, patterns, and best practices for AI-assisted development. Use when working with assembly files (.asm, .s, .S), or when the user mentions Assembly/x86/ARM. Provides calling convention guidelines, register usage patterns, and debugging techniques specific to this project's coding standards."
 categories  = ["language"]
 tags        = ["assembly"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "auto"
@@ -90,11 +93,14 @@ categories  = ["workflow"]
 
 [[plugins]]
 name        = "cpp-guide"
-repo        = "github.com/samuelpkg/samuel-cpp-guide"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "cpp-guide"
+latest      = "main"
 description = "C/C++ language guardrails, patterns, and best practices for AI-assisted development. Use when working with C/C++ files (.c, .cpp, .h, .hpp), CMakeLists.txt, or when the user mentions C/C++. Provides RAII patterns, smart pointer guidelines, move semantics, and testing standards specific to this project's coding standards."
 categories  = ["language"]
 tags        = ["cpp"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "create-prd"
@@ -119,19 +125,25 @@ categories  = ["workflow"]
 
 [[plugins]]
 name        = "csharp-guide"
-repo        = "github.com/samuelpkg/samuel-csharp-guide"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "csharp-guide"
+latest      = "main"
 description = "C# language guardrails, patterns, and best practices for AI-assisted development. Use when working with C# files (.cs, .csx), .csproj, .sln, or when the user mentions C#/.NET. Provides nullable reference types, async/await patterns, LINQ guidelines, and testing standards specific to this project's coding standards."
 categories  = ["language"]
 tags        = ["csharp"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "cuda-guide"
-repo        = "github.com/samuelpkg/samuel-cuda-guide"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "cuda-guide"
+latest      = "main"
 description = "CUDA/GPU computing guardrails, patterns, and best practices for AI-assisted development. Use when working with CUDA files (.cu, .cuh), or when the user mentions CUDA/GPU programming. Provides kernel design patterns, memory hierarchy guidelines, and occupancy optimization specific to this project's coding standards."
 categories  = ["language"]
 tags        = ["cuda"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "dart-frog"
@@ -143,11 +155,14 @@ tags        = ["dart"]
 
 [[plugins]]
 name        = "dart-guide"
-repo        = "github.com/samuelpkg/samuel-dart-guide"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "dart-guide"
+latest      = "main"
 description = "Dart language guardrails, patterns, and best practices for AI-assisted development. Use when working with Dart files (.dart), pubspec.yaml, or when the user mentions Dart/Flutter. Provides null safety patterns, async/await guidelines, Flutter integration conventions, and testing standards specific to this project's coding standards."
 categories  = ["language"]
 tags        = ["dart"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "dependency-update"
@@ -271,27 +286,36 @@ tags        = ["ruby"]
 
 [[plugins]]
 name        = "html-css-guide"
-repo        = "github.com/samuelpkg/samuel-html-css-guide"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "html-css-guide"
+latest      = "main"
 description = "HTML and CSS guardrails, patterns, and best practices for AI-assisted development. Use when working with HTML/CSS files (.html, .css, .scss, .less), or when the user mentions HTML/CSS. Provides semantic HTML guidelines, accessibility standards, modern CSS patterns, and responsive design conventions specific to this project's coding standards."
 categories  = ["language"]
 tags        = ["html-css"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "java-guide"
-repo        = "github.com/samuelpkg/samuel-java-guide"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "java-guide"
+latest      = "main"
 description = "Java language guardrails, patterns, and best practices for AI-assisted development. Use when working with Java files (.java), pom.xml, build.gradle, or when the user mentions Java. Provides modern Java patterns (records, sealed classes, streams), testing standards, and Spring conventions specific to this project's coding standards."
 categories  = ["language"]
 tags        = ["java"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "kotlin-guide"
-repo        = "github.com/samuelpkg/samuel-kotlin-guide"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "kotlin-guide"
+latest      = "main"
 description = "Kotlin language guardrails, patterns, and best practices for AI-assisted development. Use when working with Kotlin files (.kt, .kts), build.gradle.kts, or when the user mentions Kotlin. Provides null safety patterns, coroutine guidelines, data class conventions, and testing standards specific to this project's coding standards."
 categories  = ["language"]
 tags        = ["kotlin"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "ktor"
@@ -311,11 +335,14 @@ tags        = ["php"]
 
 [[plugins]]
 name        = "lua-guide"
-repo        = "github.com/samuelpkg/samuel-lua-guide"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "lua-guide"
+latest      = "main"
 description = "Lua language guardrails, patterns, and best practices for AI-assisted development. Use when working with Lua files (.lua), or when the user mentions Lua/LuaJIT/Neovim/Love2D. Provides table patterns, metatable guidelines, coroutine usage, and embedding conventions specific to this project's coding standards."
 categories  = ["language"]
 tags        = ["lua"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "micronaut"
@@ -335,19 +362,25 @@ tags        = ["typescript"]
 
 [[plugins]]
 name        = "php-guide"
-repo        = "github.com/samuelpkg/samuel-php-guide"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "php-guide"
+latest      = "main"
 description = "PHP language guardrails, patterns, and best practices for AI-assisted development. Use when working with PHP files (.php), composer.json, or when the user mentions PHP. Provides type declaration patterns, Composer conventions, PSR standards, and testing guidelines specific to this project's coding standards."
 categories  = ["language"]
 tags        = ["php"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "python-guide"
-repo        = "github.com/samuelpkg/samuel-python-guide"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "python-guide"
+latest      = "main"
 description = "Python guardrails, patterns, and best practices for AI-assisted development. Use when working with Python files (.py), requirements.txt, pyproject.toml, or when the user mentions Python. Provides type hint conventions, virtual environment standards, testing with pytest, and async patterns."
 categories  = ["language"]
 tags        = ["python"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "quarkus"
@@ -359,11 +392,14 @@ tags        = ["java"]
 
 [[plugins]]
 name        = "r-guide"
-repo        = "github.com/samuelpkg/samuel-r-guide"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "r-guide"
+latest      = "main"
 description = "R language guardrails, patterns, and best practices for AI-assisted development. Use when working with R files (.R, .Rmd, .qmd), DESCRIPTION, or when the user mentions R/RStudio. Provides tidyverse conventions, vectorization patterns, R Markdown guidelines, and testing standards specific to this project's coding standards."
 categories  = ["language"]
 tags        = ["r"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "rails"
@@ -401,19 +437,25 @@ tags        = ["rust"]
 
 [[plugins]]
 name        = "ruby-guide"
-repo        = "github.com/samuelpkg/samuel-ruby-guide"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "ruby-guide"
+latest      = "main"
 description = "Ruby language guardrails, patterns, and best practices for AI-assisted development. Use when working with Ruby files (.rb), Gemfile, Rakefile, or when the user mentions Ruby. Provides block/proc patterns, metaprogramming guidelines, Bundler conventions, and testing standards specific to this project's coding standards."
 categories  = ["language"]
 tags        = ["ruby"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "rust-guide"
-repo        = "github.com/samuelpkg/samuel-rust-guide"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "rust-guide"
+latest      = "main"
 description = "Rust guardrails, patterns, and best practices for AI-assisted development. Use when working with Rust files (.rs), Cargo.toml, or when the user mentions Rust. Provides ownership conventions, error handling with Result/Option, testing standards, and unsafe code guidelines."
 categories  = ["language"]
 tags        = ["rust"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "security-audit"
@@ -432,11 +474,14 @@ tags        = ["dart"]
 
 [[plugins]]
 name        = "shell-guide"
-repo        = "github.com/samuelpkg/samuel-shell-guide"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "shell-guide"
+latest      = "main"
 description = "Shell/Bash scripting guardrails, patterns, and best practices for AI-assisted development. Use when working with shell scripts (.sh, .bash), Makefiles, or when the user mentions Bash/Shell. Provides POSIX compliance guidelines, error handling patterns, and ShellCheck rules specific to this project's coding standards."
 categories  = ["language"]
 tags        = ["shell"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "sinatra"
@@ -448,11 +493,14 @@ tags        = ["ruby"]
 
 [[plugins]]
 name        = "solidity-guide"
-repo        = "github.com/samuelpkg/samuel-solidity-guide"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "solidity-guide"
+latest      = "main"
 description = "Solidity/Ethereum guardrails, patterns, and best practices for AI-assisted development. Use when working with Solidity files (.sol), or when the user mentions Solidity/Ethereum/smart contracts. Provides gas optimization patterns, reentrancy prevention, upgradeable contract guidelines, and testing standards specific to this project's coding standards."
 categories  = ["language"]
 tags        = ["solidity"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "spring-boot-java"
@@ -472,19 +520,25 @@ tags        = ["kotlin"]
 
 [[plugins]]
 name        = "sql-guide"
-repo        = "github.com/samuelpkg/samuel-sql-guide"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "sql-guide"
+latest      = "main"
 description = "SQL language guardrails, patterns, and best practices for AI-assisted development. Use when working with SQL files (.sql), database migrations, or when the user mentions SQL/databases. Provides query optimization patterns, indexing guidelines, transaction management, and migration standards specific to this project's coding standards."
 categories  = ["language"]
 tags        = ["sql"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "swift-guide"
-repo        = "github.com/samuelpkg/samuel-swift-guide"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "swift-guide"
+latest      = "main"
 description = "Swift language guardrails, patterns, and best practices for AI-assisted development. Use when working with Swift files (.swift), Package.swift, or when the user mentions Swift. Provides optionals handling, protocol-oriented patterns, concurrency with async/await, and testing standards specific to this project's coding standards."
 categories  = ["language"]
 tags        = ["swift"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "swiftui"
@@ -525,11 +579,14 @@ categories  = ["workflow"]
 
 [[plugins]]
 name        = "typescript-guide"
-repo        = "github.com/samuelpkg/samuel-typescript-guide"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "typescript-guide"
+latest      = "main"
 description = "TypeScript/JavaScript guardrails, patterns, and best practices for AI-assisted development. Use when working with TypeScript (.ts, .tsx) or JavaScript (.js, .jsx) files, package.json, or tsconfig.json. Provides strict mode conventions, async patterns, testing standards, and module system guidelines."
 categories  = ["language"]
 tags        = ["typescript"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "uikit"
@@ -565,11 +622,14 @@ tags        = ["php"]
 
 [[plugins]]
 name        = "zig-guide"
-repo        = "github.com/samuelpkg/samuel-zig-guide"
-latest      = "1.0.0"
+repo        = "github.com/samuelpkg/skills"
+subpath     = "zig-guide"
+latest      = "main"
 description = "Zig language guardrails, patterns, and best practices for AI-assisted development. Use when working with Zig files (.zig), build.zig, or when the user mentions Zig. Provides comptime patterns, allocator conventions, C interop guidelines, and testing standards specific to this project's coding standards."
 categories  = ["language"]
 tags        = ["zig"]
+kind        = "skill"
+upstream    = true
 
 [[plugins]]
 name        = "algorithmic-art"
